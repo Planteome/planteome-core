@@ -11,7 +11,7 @@ local-mirror: $(CATALOG)
 
 # See: https://github.com/owlcollab/owltools/wiki/Import-Chain-Mirroring
 $(CATALOG): $(ROOT)
-	owltools $< --slurp-import-closure -d $(MIRROR) -c $@ --merge-imports-closure -o $(MIRROR)/merged.owl
+	owltools $< --slurp-import-closure -d $(MIRROR) -c catalog-v001.xml --merge-imports-closure -o $(MIRROR)/merged.owl
 
 # use this to repair individual items in the cache
 $(MIRROR)/%.owl:
