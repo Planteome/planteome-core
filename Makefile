@@ -1,11 +1,13 @@
 OBO=http://purl.obolibrary.org/obo
-CATALOG = catalog-v001.xml
+CATALOG = mirror/catalog-v001.xml
 USECAT= --catalog-xml $(CATALOG)
 MIRROR= mirror
 ONTROOT= planteome
 ROOT= $(ONTROOT).owl
 
 all: $(CATALOG) planteome-validate.txt planteome-merged.obo 
+
+local-mirror: $(CATALOG)
 
 # See: https://github.com/owlcollab/owltools/wiki/Import-Chain-Mirroring
 $(CATALOG): $(ROOT)
