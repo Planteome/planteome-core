@@ -9,7 +9,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/upheno/monarch.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/po/planteome.owl">
       <dc:title xml:lang="en">Planteome top importer, alpha version</dc:title>
       <dc:description xml:lang="en">
         This is an ontology that collects a subset of core ontologies
@@ -21,7 +21,7 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/eco.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/go/extensions/go-plus.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/eo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/po.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/to.owl"/>
