@@ -1947,6 +1947,21 @@ relationship: is_conjugate_acid_of CHEBI:17996 ! chloride
 relationship: is_conjugate_base_of CHEBI:50315 ! chloronium
 
 [Term]
+id: CHEBI:17891
+name: donor
+namespace: chebi_ontology
+alt_id: CHEBI:14202
+alt_id: CHEBI:4697
+def: "A molecular entity that can transfer (\"donate\") an electron, a pair of electrons, an atom or a group to another molecular entity." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "Donator" RELATED [ChEBI:]
+synonym: "donneur" RELATED [ChEBI:]
+synonym: "Donor" EXACT [KEGG COMPOUND:]
+synonym: "donor" EXACT [UniProt:]
+xref: KEGG COMPOUND:C01351 "KEGG COMPOUND"
+is_a: CHEBI:51086 ! chemical role
+
+[Term]
 id: CHEBI:17992
 name: sucrose
 namespace: chebi_ontology
@@ -2748,6 +2763,7 @@ synonym: "anion" EXACT [ChEBI:]
 synonym: "Anionen" RELATED [ChEBI:]
 synonym: "aniones" RELATED [ChEBI:]
 synonym: "anions" RELATED [IUPAC:]
+is_a: CHEBI:24870 ! ion
 
 [Term]
 id: CHEBI:22586
@@ -2758,6 +2774,7 @@ synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "antioxidants" RELATED [ChEBI:]
 synonym: "antioxydant" RELATED [ChEBI:]
 synonym: "antoxidant" RELATED [ChEBI:]
+is_a: CHEBI:51086 ! chemical role
 
 [Term]
 id: CHEBI:22653
@@ -2793,6 +2810,23 @@ relationship: has_role CHEBI:83056 ! Daphnia magna metabolite
 relationship: has_role CHEBI:84735 ! algal metabolite
 relationship: is_conjugate_acid_of CHEBI:32660 ! asparaginate
 relationship: is_conjugate_base_of CHEBI:32661 ! asparaginium
+
+[Term]
+id: CHEBI:22695
+name: base
+namespace: chebi_ontology
+def: "A molecular entity having an available pair of electrons capable of forming a covalent bond with a hydron (Bronsted base) or with the vacant orbital of some other molecular entity (Lewis base)." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "Base" EXACT [ChEBI:]
+synonym: "base" EXACT IUPAC_NAME [IUPAC:]
+synonym: "base" EXACT [ChEBI:]
+synonym: "Base1" RELATED [KEGG COMPOUND:]
+synonym: "Base2" RELATED [KEGG COMPOUND:]
+synonym: "Basen" RELATED [ChEBI:]
+synonym: "bases" RELATED [ChEBI:]
+synonym: "Nucleobase" RELATED [KEGG COMPOUND:]
+xref: KEGG COMPOUND:C00701 "KEGG COMPOUND"
+is_a: CHEBI:51086 ! chemical role
 
 [Term]
 id: CHEBI:22712
@@ -2848,8 +2882,8 @@ synonym: "BDOSMKKIYDKNTQ-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 synonym: "cadmio" RELATED [ChEBI:]
 synonym: "cadmium" EXACT IUPAC_NAME [IUPAC:]
 synonym: "cadmium" RELATED [ChEBI:]
-synonym: "Cd" RELATED [IUPAC:]
 synonym: "Cd" RELATED FORMULA [ChEBI:]
+synonym: "Cd" RELATED [IUPAC:]
 synonym: "InChI=1S/Cd" RELATED InChI [ChEBI:]
 synonym: "Kadmium" RELATED [NIST Chemistry WebBook:]
 xref: ChEBI:C01413 "KEGG COMPOUND"
@@ -2961,6 +2995,31 @@ is_a: CHEBI:22712 ! benzenes
 is_a: CHEBI:36683 ! organochlorine compound
 
 [Term]
+id: CHEBI:23357
+name: cofactor
+namespace: chebi_ontology
+def: "An organic molecule or ion (usually a metal ion) that is required by an enzyme for its activity. It may be attached either loosely (coenzyme) or tightly (prosthetic group)." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "cofactor" EXACT [IUPAC:]
+synonym: "cofactors" EXACT IUPAC_NAME [IUPAC:]
+xref: Wikipedia:Cofactor_(biochemistry) "Wikipedia"
+is_a: CHEBI:52206 ! biochemical role
+
+[Term]
+id: CHEBI:23367
+name: molecular entity
+namespace: chebi_ontology
+def: "Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "entidad molecular" RELATED [IUPAC:]
+synonym: "entidades moleculares" RELATED [IUPAC:]
+synonym: "entite moleculaire" RELATED [IUPAC:]
+synonym: "molecular entities" RELATED [IUPAC:]
+synonym: "molecular entity" EXACT IUPAC_NAME [IUPAC:]
+synonym: "molekulare Entitaet" RELATED [ChEBI:]
+is_a: CHEBI:24431 ! chemical entity
+
+[Term]
 id: CHEBI:23529
 name: cytochrome-b6f complex inhibitor
 namespace: chebi_ontology
@@ -3033,12 +3092,23 @@ synonym: "dichlorobenzenes" RELATED [ChEBI:]
 is_a: CHEBI:23132 ! chlorobenzenes
 
 [Term]
+id: CHEBI:23888
+name: drug
+namespace: chebi_ontology
+def: "Any substance which when absorbed into a living organism may modify one or more of its functions. The term is generally accepted for a substance taken for a therapeutic purpose, but is also commonly used for abused substances." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "drugs" RELATED [ChEBI:]
+synonym: "medicine" RELATED [ChEBI:]
+is_a: CHEBI:52217 ! pharmaceutical
+
+[Term]
 id: CHEBI:23905
 name: monoatomic anion
 namespace: chebi_ontology
 synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "monoatomic anions" RELATED [ChEBI:]
 is_a: CHEBI:22563 ! anion
+is_a: CHEBI:24867 ! monoatomic ion
 
 [Term]
 id: CHEBI:23906
@@ -3046,7 +3116,23 @@ name: monoatomic cation
 namespace: chebi_ontology
 synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "monoatomic cations" RELATED [ChEBI:]
+is_a: CHEBI:24867 ! monoatomic ion
 is_a: CHEBI:36916 ! cation
+
+[Term]
+id: CHEBI:23924
+name: enzyme inhibitor
+namespace: chebi_ontology
+def: "A compound or agent that combines with an enzyme in such a manner as to prevent the normal substrate-enzyme combination and the catalytic reaction." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "enzyme inhibitor" EXACT IUPAC_NAME [IUPAC:]
+synonym: "enzyme inhibitors" RELATED [ChEBI:]
+synonym: "inhibidor enzimatico" RELATED [ChEBI:]
+synonym: "inhibidores enzimaticos" RELATED [ChEBI:]
+synonym: "inhibiteur enzymatique" RELATED [ChEBI:]
+synonym: "inhibiteurs enzymatiques" RELATED [ChEBI:]
+is_a: CHEBI:35222 ! inhibitor
+is_a: CHEBI:52206 ! biochemical role
 
 [Term]
 id: CHEBI:24127
@@ -3069,6 +3155,25 @@ synonym: "glycosyl glycosides" RELATED [ChEBI:]
 is_a: CHEBI:36233 ! disaccharide
 
 [Term]
+id: CHEBI:24431
+name: chemical entity
+namespace: chebi_ontology
+def: "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "chemical entity" EXACT [UniProt:]
+synonym: "grouped_by_chemistry" RELATED [ChEBI:]
+
+[Term]
+id: CHEBI:24432
+name: biological role
+namespace: chebi_ontology
+def: "A role played by the molecular entity or part thereof within a biological context." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "biological function" RELATED [ChEBI:]
+synonym: "grouped_by_functions" RELATED [ChEBI:]
+is_a: CHEBI:50906 ! role
+
+[Term]
 id: CHEBI:24433
 name: group
 namespace: chebi_ontology
@@ -3080,6 +3185,7 @@ synonym: "grupo" RELATED [IUPAC:]
 synonym: "grupos" RELATED [IUPAC:]
 synonym: "Gruppe" RELATED [ChEBI:]
 synonym: "Rest" RELATED [ChEBI:]
+is_a: CHEBI:24431 ! chemical entity
 relationship: has_part CHEBI:33250 ! atom
 
 [Term]
@@ -3144,6 +3250,17 @@ xref: ChEBI:C03123 "KEGG COMPOUND"
 is_a: CHEBI:33285 ! heteroorganic entity
 is_a: CHEBI:33832 ! organic cyclic compound
 is_a: CHEBI:5686 ! heterocyclic compound
+
+[Term]
+id: CHEBI:24621
+name: hormone
+namespace: chebi_ontology
+def: "Originally referring to an endogenous compound that is formed in specialized organ or group of cells and carried to another organ or group of cells, in the same organism, upon which it has a specific regulatory function, the term is now commonly used to include non-endogenous, semi-synthetic and fully synthetic analogues of such compounds." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "endocrine" RELATED [ChEBI:]
+synonym: "hormones" RELATED [ChEBI:]
+is_a: CHEBI:33280 ! molecular messenger
+is_a: CHEBI:48705 ! agonist
 
 [Term]
 id: CHEBI:24632
@@ -3228,12 +3345,27 @@ namespace: chebi_ontology
 synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "inorganic anions" RELATED [ChEBI:]
 is_a: CHEBI:22563 ! anion
+is_a: CHEBI:36914 ! inorganic ion
+
+[Term]
+id: CHEBI:24835
+name: inorganic molecular entity
+namespace: chebi_ontology
+def: "A molecular entity that contains no carbon." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "anorganische Verbindungen" RELATED [ChEBI:]
+synonym: "inorganic compounds" RELATED [ChEBI:]
+synonym: "inorganic entity" RELATED [ChEBI:]
+synonym: "inorganic molecular entities" RELATED [ChEBI:]
+synonym: "inorganics" RELATED [ChEBI:]
+is_a: CHEBI:23367 ! molecular entity
 
 [Term]
 id: CHEBI:24836
 name: inorganic oxide
 namespace: chebi_ontology
 synonym: "inorganic oxides" RELATED [ChEBI:]
+is_a: CHEBI:24835 ! inorganic molecular entity
 is_a: CHEBI:25741 ! oxide
 
 [Term]
@@ -3243,6 +3375,7 @@ namespace: chebi_ontology
 synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "anorganisches Salz" RELATED [ChEBI:]
 synonym: "inorganic salts" RELATED [ChEBI:]
+is_a: CHEBI:24835 ! inorganic molecular entity
 is_a: CHEBI:24866 ! salt
 
 [Term]
@@ -3274,6 +3407,30 @@ synonym: "sels" RELATED [ChEBI:]
 is_a: CHEBI:37577 ! heteroatomic molecular entity
 relationship: has_part CHEBI:22563 ! anion
 relationship: has_part CHEBI:36916 ! cation
+
+[Term]
+id: CHEBI:24867
+name: monoatomic ion
+namespace: chebi_ontology
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "ionic elements" RELATED [ChEBI:]
+synonym: "monoatomic ions" RELATED [ChEBI:]
+is_a: CHEBI:24870 ! ion
+is_a: CHEBI:33238 ! monoatomic entity
+
+[Term]
+id: CHEBI:24870
+name: ion
+namespace: chebi_ontology
+def: "A molecular entity having a net electric charge." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "Ion" EXACT [ChEBI:]
+synonym: "ion" EXACT [ChEBI:]
+synonym: "ion" EXACT IUPAC_NAME [IUPAC:]
+synonym: "Ionen" RELATED [ChEBI:]
+synonym: "iones" RELATED [ChEBI:]
+synonym: "ions" RELATED [ChEBI:]
+is_a: CHEBI:23367 ! molecular entity
 
 [Term]
 id: CHEBI:24873
@@ -3355,6 +3512,7 @@ synonym: "metabolite" EXACT IUPAC_NAME [IUPAC:]
 synonym: "metabolites" RELATED [ChEBI:]
 synonym: "primary metabolites" RELATED [ChEBI:]
 synonym: "secondary metabolites" RELATED [ChEBI:]
+is_a: CHEBI:52206 ! biochemical role
 
 [Term]
 id: CHEBI:25213
@@ -3656,6 +3814,7 @@ name: organic ion
 namespace: chebi_ontology
 synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "organic ions" RELATED [ChEBI:]
+is_a: CHEBI:24870 ! ion
 is_a: CHEBI:50860 ! organic molecular entity
 
 [Term]
@@ -3673,6 +3832,7 @@ namespace: chebi_ontology
 def: "A solute used by a cell under water stress to maintain cell volume." []
 synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "osmolytes" RELATED [ChEBI:]
+is_a: CHEBI:24432 ! biological role
 
 [Term]
 id: CHEBI:25741
@@ -3750,6 +3910,7 @@ synonym: "pesticides" RELATED [ChEBI:]
 synonym: "Pestizid" RELATED [ChEBI:]
 synonym: "Pestizide" RELATED [ChEBI:]
 xref: Wikipedia:Pesticide "Wikipedia"
+is_a: CHEBI:33232 ! application
 
 [Term]
 id: CHEBI:26004
@@ -3850,6 +4011,7 @@ namespace: chebi_ontology
 synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "photosynthetic electron transport chain inhibitors" RELATED [ChEBI:]
 is_a: CHEBI:24527 ! herbicide
+is_a: CHEBI:38496 ! electron-transport chain inhibitor
 
 [Term]
 id: CHEBI:26089
@@ -3859,6 +4021,15 @@ synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "photosystem II inhibitors" RELATED [ChEBI:]
 synonym: "PSII inhibitor" RELATED [ChEBI:]
 is_a: CHEBI:26087 ! photosynthetic electron-transport chain inhibitor
+
+[Term]
+id: CHEBI:26155
+name: plant growth regulator
+namespace: chebi_ontology
+def: "A chemical, natural or artificial, that can affect the rate of growth of a plant." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "plant growth regulators" RELATED [ChEBI:]
+is_a: CHEBI:39317 ! growth regulator
 
 [Term]
 id: CHEBI:26178
@@ -3919,6 +4090,7 @@ synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "groupe prosthetique" RELATED [IUPAC:]
 synonym: "prosthetic group" EXACT IUPAC_NAME [IUPAC:]
 synonym: "prosthetic groups" RELATED [ChEBI:]
+is_a: CHEBI:23357 ! cofactor
 
 [Term]
 id: CHEBI:26386
@@ -3959,6 +4131,22 @@ def: "A class of imidazopyrimidines that consists of purine and its substituted 
 synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "a purine" RELATED [UniProt:]
 is_a: CHEBI:35875 ! imidazopyrimidine
+
+[Term]
+id: CHEBI:26519
+name: radical
+namespace: chebi_ontology
+def: "A molecular entity possessing an unpaired electron." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "free radical" RELATED [ChEBI:]
+synonym: "freies Radikal" RELATED [ChEBI:]
+synonym: "radical" EXACT IUPAC_NAME [IUPAC:]
+synonym: "radical libre" RELATED [ChEBI:]
+synonym: "radicales libres" RELATED [ChEBI:]
+synonym: "radicals" RELATED [IUPAC:]
+synonym: "Radikal" RELATED [ChEBI:]
+synonym: "Radikale" RELATED [ChEBI:]
+is_a: CHEBI:23367 ! molecular entity
 
 [Term]
 id: CHEBI:26607
@@ -4245,6 +4433,7 @@ namespace: chebi_ontology
 synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "micronutrients" RELATED [ChEBI:]
 synonym: "trace elements" RELATED [ChEBI:]
+is_a: CHEBI:33284 ! nutrient
 
 [Term]
 id: CHEBI:27081
@@ -6140,6 +6329,24 @@ xref: KEGG COMPOUND:C00241 "KEGG COMPOUND"
 is_a: CHEBI:51143 ! nitrogen molecular entity
 
 [Term]
+id: CHEBI:33232
+name: application
+namespace: chebi_ontology
+def: "Intended use of the molecular entity or part thereof by humans." []
+synonym: "." RELATED FORMULA [ChEBI:]
+is_a: CHEBI:50906 ! role
+
+[Term]
+id: CHEBI:33238
+name: monoatomic entity
+namespace: chebi_ontology
+def: "A monoatomic entity is a molecular entity consisting of a single atom." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "atomic entity" RELATED [ChEBI:]
+synonym: "monoatomic entities" RELATED [ChEBI:]
+is_a: CHEBI:33259 ! elemental molecular entity
+
+[Term]
 id: CHEBI:33240
 name: coordination entity
 namespace: chebi_ontology
@@ -6165,6 +6372,7 @@ name: inorganic hydride
 namespace: chebi_ontology
 synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "inorganic hydrides" RELATED [ChEBI:]
+is_a: CHEBI:24835 ! inorganic molecular entity
 is_a: CHEBI:33692 ! hydrides
 
 [Term]
@@ -6225,6 +6433,7 @@ synonym: "atoms" RELATED [ChEBI:]
 synonym: "atomus" RELATED [ChEBI:]
 synonym: "element" RELATED [ChEBI:]
 synonym: "elements" RELATED [ChEBI:]
+is_a: CHEBI:24431 ! chemical entity
 relationship: has_part CHEBI:10545 ! electron
 relationship: has_part CHEBI:33252 ! atomic nucleus
 
@@ -6268,6 +6477,17 @@ synonym: "primary amides" EXACT IUPAC_NAME [IUPAC:]
 is_a: CHEBI:32988 ! amide
 
 [Term]
+id: CHEBI:33259
+name: elemental molecular entity
+namespace: chebi_ontology
+def: "A molecular entity all atoms of which have the same atomic number." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "homoatomic entity" RELATED [ChEBI:]
+synonym: "homoatomic molecular entities" RELATED [ChEBI:]
+synonym: "homoatomic molecular entity" RELATED [ChEBI:]
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
 id: CHEBI:33261
 name: organosulfur compound
 namespace: chebi_ontology
@@ -6286,7 +6506,9 @@ id: CHEBI:33262
 name: elemental oxygen
 namespace: chebi_ontology
 synonym: "." RELATED FORMULA [ChEBI:]
+is_a: CHEBI:24835 ! inorganic molecular entity
 is_a: CHEBI:25806 ! oxygen molecular entity
+is_a: CHEBI:33259 ! elemental molecular entity
 
 [Term]
 id: CHEBI:33265
@@ -6306,6 +6528,38 @@ is_a: CHEBI:22563 ! anion
 is_a: CHEBI:36358 ! polyatomic ion
 
 [Term]
+id: CHEBI:33280
+name: molecular messenger
+namespace: chebi_ontology
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "chemical messenger" RELATED [ChEBI:]
+is_a: CHEBI:24432 ! biological role
+
+[Term]
+id: CHEBI:33281
+name: antimicrobial agent
+namespace: chebi_ontology
+alt_id: CHEBI:22582
+def: "A substance that kills or slows the growth of microorganisms, including bacteria, viruses, fungi and protozoans." []
+synonym: "antibiotic" RELATED [ChEBI:]
+synonym: "antibiotics" RELATED [ChEBI:]
+synonym: "Antibiotika" RELATED [ChEBI:]
+synonym: "Antibiotikum" RELATED [ChEBI:]
+synonym: "antibiotique" RELATED [IUPAC:]
+synonym: "antimicrobial" RELATED [ChEBI:]
+synonym: "antimicrobial agents" RELATED [ChEBI:]
+synonym: "antimicrobials" RELATED [ChEBI:]
+synonym: "microbicide" RELATED [ChEBI:]
+synonym: "microbicides" RELATED [ChEBI:]
+xref: CiteXplore:12964249 "PubMed citation"
+xref: CiteXplore:22117953 "PubMed citation"
+xref: CiteXplore:22439833 "PubMed citation"
+xref: CiteXplore:22849268 "PubMed citation"
+xref: CiteXplore:22849276 "PubMed citation"
+xref: CiteXplore:22958833 "PubMed citation"
+is_a: CHEBI:24432 ! biological role
+
+[Term]
 id: CHEBI:33282
 name: antibacterial agent
 namespace: chebi_ontology
@@ -6315,6 +6569,16 @@ synonym: "antibacterial agents" RELATED [ChEBI:]
 synonym: "antibacterials" RELATED [ChEBI:]
 synonym: "bactericide" RELATED [ChEBI:]
 synonym: "bactericides" RELATED [ChEBI:]
+is_a: CHEBI:33281 ! antimicrobial agent
+
+[Term]
+id: CHEBI:33284
+name: nutrient
+namespace: chebi_ontology
+def: "A nutrient is a chemical element needed by all life forms." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "nutrients" RELATED [ChEBI:]
+is_a: CHEBI:78295 ! food component
 
 [Term]
 id: CHEBI:33285
@@ -6562,6 +6826,7 @@ name: elemental chlorine
 namespace: chebi_ontology
 synonym: "." RELATED FORMULA [ChEBI:]
 is_a: CHEBI:23117 ! chlorine molecular entity
+is_a: CHEBI:33434 ! elemental halogen
 
 [Term]
 id: CHEBI:33432
@@ -6570,6 +6835,24 @@ namespace: chebi_ontology
 synonym: "atomic chlorine" RELATED [ChEBI:]
 synonym: "Cl" RELATED FORMULA [ChEBI:]
 is_a: CHEBI:33431 ! elemental chlorine
+is_a: CHEBI:33433 ! monoatomic halogen
+
+[Term]
+id: CHEBI:33433
+name: monoatomic halogen
+namespace: chebi_ontology
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "monoatomic halogens" RELATED [ChEBI:]
+is_a: CHEBI:33238 ! monoatomic entity
+
+[Term]
+id: CHEBI:33434
+name: elemental halogen
+namespace: chebi_ontology
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "elemental halogen" EXACT [ChEBI:]
+synonym: "elemental halogens" RELATED [ChEBI:]
+is_a: CHEBI:33259 ! elemental molecular entity
 
 [Term]
 id: CHEBI:33455
@@ -6666,6 +6949,7 @@ def: "A molecular entity containing one or more atoms of a transition element." 
 synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "transition element molecular entities" RELATED [ChEBI:]
 synonym: "transition metal molecular entity" RELATED [ChEBI:]
+is_a: CHEBI:23367 ! molecular entity
 relationship: has_part CHEBI:27081 ! transition element atom
 
 [Term]
@@ -6773,6 +7057,7 @@ def: "A molecular entity containing one or more atoms from any of groups 1, 2, 1
 synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "main group compounds" RELATED [ChEBI:]
 synonym: "main group molecular entities" RELATED [ChEBI:]
+is_a: CHEBI:23367 ! molecular entity
 relationship: has_part CHEBI:33318 ! main group element atom
 
 [Term]
@@ -7280,6 +7565,7 @@ synonym: "reactif" RELATED [IUPAC:]
 synonym: "reactivo" RELATED [IUPAC:]
 synonym: "reagent" EXACT IUPAC_NAME [IUPAC:]
 synonym: "reagents" RELATED [ChEBI:]
+is_a: CHEBI:33232 ! application
 
 [Term]
 id: CHEBI:33917
@@ -7305,6 +7591,7 @@ name: macronutrient
 namespace: chebi_ontology
 synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "macronutrients" RELATED [ChEBI:]
+is_a: CHEBI:33284 ! nutrient
 
 [Term]
 id: CHEBI:33958
@@ -7395,6 +7682,18 @@ synonym: "sesquiterpenos" RELATED [IUPAC:]
 is_a: CHEBI:35186 ! terpene
 
 [Term]
+id: CHEBI:35222
+name: inhibitor
+namespace: chebi_ontology
+def: "A substance that diminishes the rate of a chemical reaction." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "inhibidor" RELATED [ChEBI:]
+synonym: "inhibiteur" RELATED [ChEBI:]
+synonym: "inhibitor" EXACT IUPAC_NAME [IUPAC:]
+synonym: "inhibitors" RELATED [ChEBI:]
+is_a: CHEBI:24432 ! biological role
+
+[Term]
 id: CHEBI:35223
 name: catalyst
 namespace: chebi_ontology
@@ -7404,6 +7703,7 @@ synonym: "catalizador" RELATED [ChEBI:]
 synonym: "catalyseur" RELATED [ChEBI:]
 synonym: "catalyst" EXACT IUPAC_NAME [IUPAC:]
 synonym: "Katalysator" RELATED [ChEBI:]
+is_a: CHEBI:51086 ! chemical role
 
 [Term]
 id: CHEBI:35238
@@ -7508,6 +7808,7 @@ synonym: "anti-infective agents" RELATED [ChEBI:]
 synonym: "anti-infective drugs" RELATED [ChEBI:]
 synonym: "antiinfective agents" RELATED [ChEBI:]
 synonym: "antiinfective drug" RELATED [ChEBI:]
+is_a: CHEBI:23888 ! drug
 
 [Term]
 id: CHEBI:35456
@@ -7555,6 +7856,8 @@ name: analgesic
 namespace: chebi_ontology
 def: "An agent capable of relieving pain without the loss of consciousness or without producing anaesthesia. In addition, analgesic is a role played by a compound which is exhibited by a capability to cause a reduction of pain symptoms." []
 synonym: "." RELATED FORMULA [ChEBI:]
+is_a: CHEBI:23888 ! drug
+is_a: CHEBI:52210 ! pharmacological role
 
 [Term]
 id: CHEBI:35552
@@ -7566,6 +7869,27 @@ synonym: "heterocyclic organic fundamental parents" RELATED [ChEBI:]
 synonym: "heterocyclic parent hydrides" EXACT IUPAC_NAME [IUPAC:]
 synonym: "organic heterocyclic fundamental parents" RELATED [ChEBI:]
 is_a: CHEBI:33245 ! organic fundamental parent
+
+[Term]
+id: CHEBI:35554
+name: cardiovascular drug
+namespace: chebi_ontology
+def: "A drug that affects the rate or intensity of cardiac contraction, blood vessel diameter or blood volume." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "cardiovascular agent" RELATED [ChEBI:]
+synonym: "cardiovascular drugs" RELATED [ChEBI:]
+is_a: CHEBI:23888 ! drug
+
+[Term]
+id: CHEBI:35568
+name: mancude ring
+namespace: chebi_ontology
+def: "Any molecular entity that consists of a ring having (formally) the maximum number of noncumulative double bonds." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "mancude rings" RELATED [ChEBI:]
+synonym: "mancude-ring systems" EXACT IUPAC_NAME [IUPAC:]
+synonym: "mancunide-ring systems" RELATED [IUPAC:]
+is_a: CHEBI:23367 ! molecular entity
 
 [Term]
 id: CHEBI:35570
@@ -7595,6 +7919,7 @@ synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "organic mancude parents" RELATED [ChEBI:]
 synonym: "organic mancude-ring parents" RELATED [ChEBI:]
 is_a: CHEBI:33245 ! organic fundamental parent
+is_a: CHEBI:35568 ! mancude ring
 
 [Term]
 id: CHEBI:35584
@@ -7692,6 +8017,19 @@ is_a: CHEBI:24833 ! oxoacid
 is_a: CHEBI:36963 ! organooxygen compound
 
 [Term]
+id: CHEBI:35617
+name: flavouring agent
+namespace: chebi_ontology
+def: "A food additive that is used to added improve the taste or odour of a food." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "flavoring agent" RELATED [ChEBI:]
+synonym: "flavoring agents" RELATED [ChEBI:]
+synonym: "flavour enhancer" RELATED [ChEBI:]
+synonym: "flavour enhancers" RELATED [ChEBI:]
+synonym: "flavouring agents" RELATED [ChEBI:]
+is_a: CHEBI:64047 ! food additive
+
+[Term]
 id: CHEBI:35620
 name: vasodilator agent
 namespace: chebi_ontology
@@ -7699,6 +8037,7 @@ def: "A drug used to cause dilation of the blood vessels." []
 synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "vasodilator" RELATED [ChEBI:]
 synonym: "vasodilator agents" RELATED [ChEBI:]
+is_a: CHEBI:35554 ! cardiovascular drug
 
 [Term]
 id: CHEBI:35692
@@ -7753,6 +8092,7 @@ synonym: "xenobiotic compounds" RELATED [ChEBI:]
 synonym: "xenobiotics" EXACT IUPAC_NAME [IUPAC:]
 xref: KEGG COMPOUND:C06708 "KEGG COMPOUND"
 xref: Wikipedia:Xenobiotic "Wikipedia"
+is_a: CHEBI:24432 ! biological role
 
 [Term]
 id: CHEBI:35718
@@ -7765,6 +8105,7 @@ synonym: "antifungal agents" RELATED [ChEBI:]
 synonym: "antifungal drug" RELATED [ChEBI:]
 synonym: "antifungal drugs" RELATED [ChEBI:]
 synonym: "antifungals" RELATED [ChEBI:]
+is_a: CHEBI:33281 ! antimicrobial agent
 
 [Term]
 id: CHEBI:35735
@@ -7813,6 +8154,16 @@ synonym: "Pi" RELATED [ChEBI:]
 is_a: CHEBI:33461 ! phosphorus oxoanion
 relationship: has_role CHEBI:77746 ! human metabolite
 relationship: is_conjugate_base_of CHEBI:26078 ! phosphoric acid
+
+[Term]
+id: CHEBI:35856
+name: lipoxygenase inhibitor
+namespace: chebi_ontology
+def: "A compound or agent that combines with lipoxygenase and thereby prevents its substrate-enzyme combination with arachidonic acid and the formation of the icosanoid products hydroxyicosatetraenoic acid and various leukotrienes." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "lipooxygenase inhibitor" RELATED [ChEBI:]
+synonym: "lipoxygenase inhibitors" RELATED [ChEBI:]
+is_a: CHEBI:76837 ! EC 1.13.11.* (oxidoreductase acting on single donors and incorporating 2 O atoms) inhibitor
 
 [Term]
 id: CHEBI:35871
@@ -8042,6 +8393,7 @@ namespace: chebi_ontology
 def: "Any molecular entity consisting of more than one atom." []
 synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "polyatomic entities" RELATED [ChEBI:]
+is_a: CHEBI:23367 ! molecular entity
 relationship: has_part CHEBI:24433 ! group
 
 [Term]
@@ -8051,6 +8403,7 @@ namespace: chebi_ontology
 def: "An ion consisting of more than one atom." []
 synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "polyatomic ions" RELATED [ChEBI:]
+is_a: CHEBI:24870 ! ion
 is_a: CHEBI:36357 ! polyatomic entity
 
 [Term]
@@ -8160,6 +8513,15 @@ synonym: "monoanions" RELATED [ChEBI:]
 is_a: CHEBI:22563 ! anion
 
 [Term]
+id: CHEBI:36871
+name: inorganic radical
+namespace: chebi_ontology
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "inorganic radicals" RELATED [ChEBI:]
+is_a: CHEBI:24835 ! inorganic molecular entity
+is_a: CHEBI:26519 ! radical
+
+[Term]
 id: CHEBI:36873
 name: radical anion
 namespace: chebi_ontology
@@ -8168,6 +8530,19 @@ synonym: "anion radical" RELATED [IUPAC:]
 synonym: "radical anion" EXACT IUPAC_NAME [IUPAC:]
 synonym: "radical anions" RELATED [ChEBI:]
 is_a: CHEBI:22563 ! anion
+is_a: CHEBI:36875 ! radical ion
+
+[Term]
+id: CHEBI:36875
+name: radical ion
+namespace: chebi_ontology
+def: "A radical that carries an electric charge." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "ion radical" RELATED [IUPAC:]
+synonym: "radical ion" EXACT IUPAC_NAME [IUPAC:]
+synonym: "radical ions" RELATED [IUPAC:]
+is_a: CHEBI:24870 ! ion
+is_a: CHEBI:26519 ! radical
 
 [Term]
 id: CHEBI:36876
@@ -8177,6 +8552,26 @@ synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "inorganic anion radical" RELATED [ChEBI:]
 synonym: "inorganic radical anions" RELATED [ChEBI:]
 is_a: CHEBI:36873 ! radical anion
+is_a: CHEBI:36878 ! inorganic radical ion
+
+[Term]
+id: CHEBI:36878
+name: inorganic radical ion
+namespace: chebi_ontology
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "inorganic ion radical" RELATED [ChEBI:]
+synonym: "inorganic radical ions" RELATED [ChEBI:]
+is_a: CHEBI:36871 ! inorganic radical
+is_a: CHEBI:36875 ! radical ion
+
+[Term]
+id: CHEBI:36914
+name: inorganic ion
+namespace: chebi_ontology
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "inorganic ions" RELATED [ChEBI:]
+is_a: CHEBI:24835 ! inorganic molecular entity
+is_a: CHEBI:24870 ! ion
 
 [Term]
 id: CHEBI:36915
@@ -8184,6 +8579,7 @@ name: inorganic cation
 namespace: chebi_ontology
 synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "inorganic cations" RELATED [ChEBI:]
+is_a: CHEBI:36914 ! inorganic ion
 is_a: CHEBI:36916 ! cation
 
 [Term]
@@ -8202,6 +8598,7 @@ synonym: "cations" RELATED [ChEBI:]
 synonym: "Kation" RELATED [ChEBI:]
 synonym: "Kationen" RELATED [ChEBI:]
 xref: KEGG COMPOUND:C01373 "KEGG COMPOUND"
+is_a: CHEBI:24870 ! ion
 
 [Term]
 id: CHEBI:36961
@@ -8272,6 +8669,27 @@ name: elemental sodium
 namespace: chebi_ontology
 synonym: "." RELATED FORMULA [ChEBI:]
 is_a: CHEBI:26712 ! sodium molecular entity
+
+[Term]
+id: CHEBI:37527
+name: acid
+namespace: chebi_ontology
+alt_id: CHEBI:13800
+alt_id: CHEBI:13801
+alt_id: CHEBI:22209
+alt_id: CHEBI:2426
+def: "An acid is a molecular entity capable of donating a hydron (Bronsted acid) or capable of forming a covalent bond with an electron pair (Lewis acid)." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "Acid" EXACT [KEGG COMPOUND:]
+synonym: "acid" EXACT IUPAC_NAME [IUPAC:]
+synonym: "acide" RELATED [IUPAC:]
+synonym: "acido" RELATED [ChEBI:]
+synonym: "acids" RELATED [ChEBI:]
+synonym: "an acid" RELATED [UniProt:]
+synonym: "Saeure" RELATED [ChEBI:]
+synonym: "Saeuren" RELATED [ChEBI:]
+xref: KEGG COMPOUND:C00174 "KEGG COMPOUND"
+is_a: CHEBI:51086 ! chemical role
 
 [Term]
 id: CHEBI:37569
@@ -8423,6 +8841,8 @@ synonym: "plant growth hormone" RELATED [ChEBI:]
 synonym: "plant growth hormones" RELATED [ChEBI:]
 synonym: "plant hormones" RELATED [ChEBI:]
 xref: Wikipedia:Phytohormone "Wikipedia"
+is_a: CHEBI:24621 ! hormone
+is_a: CHEBI:26155 ! plant growth regulator
 
 [Term]
 id: CHEBI:38070
@@ -8431,6 +8851,7 @@ namespace: chebi_ontology
 def: "A drug used for the treatment or prevention of cardiac arrhythmias. Anti-arrhythmia drugs may affect the polarisation-repolarisation phase of the action potential, its excitability or refractoriness, or impulse conduction or membrane responsiveness within cardiac fibres." []
 synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "antiarrhythmic agent" RELATED [ChEBI:]
+is_a: CHEBI:35554 ! cardiovascular drug
 
 [Term]
 id: CHEBI:38101
@@ -8486,6 +8907,15 @@ synonym: "polycyclic heteroarenes" RELATED [ChEBI:]
 is_a: CHEBI:33833 ! heteroarene
 
 [Term]
+id: CHEBI:38496
+name: electron-transport chain inhibitor
+namespace: chebi_ontology
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "electron transport chain inhibitors" RELATED [ChEBI:]
+synonym: "ETC inhibitor" RELATED [ChEBI:]
+is_a: CHEBI:76932 ! pathway inhibitor
+
+[Term]
 id: CHEBI:38631
 name: aminoalkylindole
 namespace: chebi_ontology
@@ -8527,6 +8957,7 @@ synonym: "Anaesthetikum" RELATED [ChEBI:]
 synonym: "anesthetic agent" RELATED [ChEBI:]
 synonym: "anesthetic drug" RELATED [ChEBI:]
 synonym: "anesthetics" RELATED [ChEBI:]
+is_a: CHEBI:23888 ! drug
 
 [Term]
 id: CHEBI:39141
@@ -8539,6 +8970,31 @@ synonym: "Bronsted acid" EXACT IUPAC_NAME [IUPAC:]
 synonym: "Bronsted-Saeure" RELATED [ChEBI:]
 synonym: "donneur d'hydron" RELATED [IUPAC:]
 synonym: "hydron donor" RELATED [IUPAC:]
+is_a: CHEBI:17891 ! donor
+is_a: CHEBI:37527 ! acid
+
+[Term]
+id: CHEBI:39144
+name: Lewis base
+namespace: chebi_ontology
+def: "A molecular entity able to provide a pair of electrons and thus capable of forming a covalent bond with an electron-pair acceptor (Lewis acid), thereby producing a Lewis adduct." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "base de Lewis" RELATED [IUPAC:]
+synonym: "donneur d'une paire d'electrons" RELATED [ChEBI:]
+synonym: "electron donor" RELATED [ChEBI:]
+synonym: "Lewis base" EXACT IUPAC_NAME [IUPAC:]
+synonym: "Lewis-Base" RELATED [ChEBI:]
+is_a: CHEBI:17891 ! donor
+is_a: CHEBI:22695 ! base
+
+[Term]
+id: CHEBI:39317
+name: growth regulator
+namespace: chebi_ontology
+def: "Any chemical substance that inhibits the life-cycle of an organism." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "growth regulators" RELATED [ChEBI:]
+is_a: CHEBI:24432 ! biological role
 
 [Term]
 id: CHEBI:39418
@@ -8726,6 +9182,8 @@ synonym: "Loesungsmittel" RELATED [ChEBI:]
 synonym: "solvant" RELATED [ChEBI:]
 synonym: "solvents" RELATED [ChEBI:]
 xref: Wikipedia:Solvent "Wikipedia"
+is_a: CHEBI:33232 ! application
+is_a: CHEBI:51086 ! chemical role
 
 [Term]
 id: CHEBI:46789
@@ -8990,6 +9448,18 @@ synonym: "isoureas" RELATED [ChEBI:]
 is_a: CHEBI:48378 ! carboximidic acid
 
 [Term]
+id: CHEBI:48705
+name: agonist
+namespace: chebi_ontology
+def: "Substance which binds to cell receptors normally responding to naturally occurring substances and which produces a response of its own." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "agonist" EXACT IUPAC_NAME [IUPAC:]
+synonym: "agonista" RELATED [ChEBI:]
+synonym: "agoniste" RELATED [ChEBI:]
+synonym: "agonists" RELATED [ChEBI:]
+is_a: CHEBI:52210 ! pharmacological role
+
+[Term]
 id: CHEBI:48706
 name: antagonist
 namespace: chebi_ontology
@@ -8999,6 +9469,7 @@ synonym: "antagonist" EXACT IUPAC_NAME [IUPAC:]
 synonym: "antagonista" RELATED [ChEBI:]
 synonym: "antagoniste" RELATED [ChEBI:]
 synonym: "antagonists" RELATED [ChEBI:]
+is_a: CHEBI:52210 ! pharmacological role
 
 [Term]
 id: CHEBI:48864
@@ -9045,6 +9516,7 @@ synonym: "Wasserstoff" RELATED [ChEBI:]
 synonym: "YZCKVEUIGOORGS-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 xref: PDBeChem:H "PDBeChem"
 xref: WebElements:H "WebElements"
+is_a: CHEBI:24835 ! inorganic molecular entity
 is_a: CHEBI:25585 ! nonmetal atom
 is_a: CHEBI:33559 ! s-block element atom
 relationship: has_role CHEBI:33937 ! macronutrient
@@ -9069,6 +9541,18 @@ synonym: "desquamating agent" RELATED [ChEBI:]
 synonym: "keratolytic agent" RELATED [ChEBI:]
 synonym: "keratolytic drugs" RELATED [ChEBI:]
 synonym: "skin-peeling agent" RELATED [ChEBI:]
+is_a: CHEBI:50177 ! dermatologic drug
+
+[Term]
+id: CHEBI:50177
+name: dermatologic drug
+namespace: chebi_ontology
+def: "A drug used to treat or prevent skin disorders or for the routine care of skin." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "dermatologic agent" RELATED [ChEBI:]
+synonym: "dermatologic drugs" RELATED [ChEBI:]
+synonym: "dermatological agent" RELATED [ChEBI:]
+is_a: CHEBI:23888 ! drug
 
 [Term]
 id: CHEBI:50312
@@ -9174,6 +9658,7 @@ def: "Substance that sweeten food, beverages, medications, etc." []
 synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "sweetener" RELATED [ChEBI:]
 synonym: "sweeteners" RELATED [ChEBI:]
+is_a: CHEBI:35617 ! flavouring agent
 
 [Term]
 id: CHEBI:50699
@@ -9203,6 +9688,7 @@ synonym: "." RELATED FORMULA [ChEBI:]
 synonym: "Dietary Supplement" RELATED [ChEBI:]
 synonym: "Food Supplementation" RELATED [ChEBI:]
 synonym: "Nutritional supplement" RELATED [ChEBI:]
+is_a: CHEBI:23888 ! drug
 
 [Term]
 id: CHEBI:50860
@@ -9229,6 +9715,13 @@ synonym: "alergeno" RELATED [ChEBI:]
 synonym: "allergene" RELATED [ChEBI:]
 synonym: "allergenic agent" RELATED [ChEBI:]
 xref: Wikipedia:Allergen "Wikipedia"
+is_a: CHEBI:52209 ! aetiopathogenetic role
+
+[Term]
+id: CHEBI:50906
+name: role
+namespace: chebi_ontology
+def: "A role is particular behaviour which a material entity may exhibit." []
 
 [Term]
 id: CHEBI:50910
@@ -9244,6 +9737,15 @@ synonym: "neurotoxic agents" RELATED [ChEBI:]
 synonym: "neurotoxicant" RELATED [ChEBI:]
 synonym: "neurotoxins" RELATED [ChEBI:]
 xref: Wikipedia:Neurotoxin "Wikipedia"
+is_a: CHEBI:52209 ! aetiopathogenetic role
+is_a: CHEBI:64909 ! poison
+
+[Term]
+id: CHEBI:51086
+name: chemical role
+namespace: chebi_ontology
+def: "A role played by the molecular entity or part thereof within a chemical context." []
+is_a: CHEBI:50906 ! role
 
 [Term]
 id: CHEBI:51143
@@ -9287,6 +9789,48 @@ name: organic univalent group
 namespace: chebi_ontology
 synonym: "organic monovalent group" RELATED [ChEBI:]
 is_a: CHEBI:33247 ! organic group
+
+[Term]
+id: CHEBI:52206
+name: biochemical role
+namespace: chebi_ontology
+def: "A biological role played by the molecular entity or part thereof within a biochemical context." []
+is_a: CHEBI:24432 ! biological role
+
+[Term]
+id: CHEBI:52209
+name: aetiopathogenetic role
+namespace: chebi_ontology
+def: "A role played by the molecular entity or part thereof which causes the development of a pathological process." []
+synonym: "etiopathogenetic agent" RELATED [ChEBI:]
+synonym: "etiopathogenetic role" RELATED [ChEBI:]
+is_a: CHEBI:24432 ! biological role
+
+[Term]
+id: CHEBI:52210
+name: pharmacological role
+namespace: chebi_ontology
+def: "A biological role which describes how a drug interacts within a biological system and how the interactions affect its medicinal properties." []
+is_a: CHEBI:24432 ! biological role
+
+[Term]
+id: CHEBI:52211
+name: physiological role
+namespace: chebi_ontology
+is_a: CHEBI:24432 ! biological role
+
+[Term]
+id: CHEBI:52217
+name: pharmaceutical
+namespace: chebi_ontology
+alt_id: CHEBI:33293
+alt_id: CHEBI:33294
+def: "Any substance introduced into a living organism with therapeutic or diagnostic purpose." []
+synonym: "." RELATED FORMULA [ChEBI:]
+synonym: "farmaco" RELATED [ChEBI:]
+synonym: "medicament" RELATED [ChEBI:]
+synonym: "pharmaceuticals" RELATED [ChEBI:]
+is_a: CHEBI:33232 ! application
 
 [Term]
 id: CHEBI:52446
@@ -9359,6 +9903,7 @@ name: inorganic hydroxy compound
 namespace: chebi_ontology
 synonym: "inorganic hydroxides" RELATED [ChEBI:]
 is_a: CHEBI:24651 ! hydroxides
+is_a: CHEBI:24835 ! inorganic molecular entity
 
 [Term]
 id: CHEBI:528881
@@ -9375,6 +9920,7 @@ def: "The biological role played by a material entity when bound by a receptor o
 synonym: "antigenic determinant" RELATED [ChEBI:]
 synonym: "epitope function" RELATED [ChEBI:]
 synonym: "epitope role" RELATED [ChEBI:]
+is_a: CHEBI:24432 ! biological role
 
 [Term]
 id: CHEBI:53183
@@ -9551,6 +10097,23 @@ synonym: "nucleophile" RELATED [ChEBI:]
 synonym: "nucleophiles" RELATED [ChEBI:]
 synonym: "nucleophilic reagents" RELATED [ChEBI:]
 is_a: CHEBI:33893 ! reagent
+is_a: CHEBI:39144 ! Lewis base
+
+[Term]
+id: CHEBI:59999
+name: chemical substance
+namespace: chebi_ontology
+def: "A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types." []
+synonym: "Chemische Substanz" RELATED [ChEBI:]
+is_a: CHEBI:24431 ! chemical entity
+
+[Term]
+id: CHEBI:60004
+name: mixture
+namespace: chebi_ontology
+def: "A mixture is a chemical substance composed of multiple molecules, at least two of which are of a different kind." []
+synonym: "Mischung" RELATED [ChEBI:]
+is_a: CHEBI:59999 ! chemical substance
 
 [Term]
 id: CHEBI:60027
@@ -9560,6 +10123,7 @@ def: "A polymer is a mixture, which is composed of macromolecules of different k
 synonym: "Kunststoff" RELATED [ChEBI:]
 synonym: "Polymer" EXACT [ChEBI:]
 xref: Wikipedia:Polymer "Wikipedia"
+is_a: CHEBI:60004 ! mixture
 relationship: has_part CHEBI:33839 ! macromolecule
 
 [Term]
@@ -9694,6 +10258,16 @@ is_a: CHEBI:37022 ! amino-acid anion
 relationship: is_conjugate_base_of CHEBI:33856 ! aromatic amino acid
 
 [Term]
+id: CHEBI:64047
+name: food additive
+namespace: chebi_ontology
+def: "Any substance which is added to food to preserve or enhance its flavour and/or appearance." []
+synonym: "food additives" RELATED [ChEBI:]
+xref: Wikipedia:Food_additive "Wikipedia"
+is_a: CHEBI:33232 ! application
+is_a: CHEBI:78295 ! food component
+
+[Term]
 id: CHEBI:64554
 name: tryptophan zwitterion
 namespace: chebi_ontology
@@ -9718,6 +10292,7 @@ synonym: "flour treatment agent" EXACT [ChEBI:]
 synonym: "improving agent" RELATED [ChEBI:]
 synonym: "improving agents" RELATED [ChEBI:]
 xref: Wikipedia:Flour_treatment_agent "Wikipedia"
+is_a: CHEBI:64047 ! food additive
 
 [Term]
 id: CHEBI:64708
@@ -9734,6 +10309,23 @@ namespace: chebi_ontology
 def: "Any organic molecular entity that is acidic and contains carbon in covalent linkage." []
 synonym: "organic acids" RELATED [ChEBI:]
 is_a: CHEBI:50860 ! organic molecular entity
+
+[Term]
+id: CHEBI:64909
+name: poison
+namespace: chebi_ontology
+def: "Any substance that causes disturbance to organisms by chemical reaction or other activity on the molecular scale, when a sufficient quantity is absorbed by the organism." []
+synonym: "poisonous agent" RELATED [ChEBI:]
+synonym: "poisonous agents" RELATED [ChEBI:]
+synonym: "poisonous substance" RELATED [ChEBI:]
+synonym: "poisonous substances" RELATED [ChEBI:]
+synonym: "poisons" RELATED [ChEBI:]
+synonym: "toxic agent" RELATED [ChEBI:]
+synonym: "toxic agents" RELATED [ChEBI:]
+synonym: "toxic substance" RELATED [ChEBI:]
+synonym: "toxic substances" RELATED [ChEBI:]
+xref: Wikipedia:Poison "Wikipedia"
+is_a: CHEBI:24432 ! biological role
 
 [Term]
 id: CHEBI:64996
@@ -9757,6 +10349,8 @@ synonym: "linoleic acid omega(6)-lipoxygenase inhibitor" RELATED [ChEBI:]
 synonym: "linoleic acid omega(6)-lipoxygenase inhibitors" RELATED [ChEBI:]
 synonym: "omega(6) lipoxygenase inhibitor" RELATED [ChEBI:]
 synonym: "omega(6) lipoxygenase inhibitors" RELATED [ChEBI:]
+is_a: CHEBI:35856 ! lipoxygenase inhibitor
+is_a: CHEBI:76837 ! EC 1.13.11.* (oxidoreductase acting on single donors and incorporating 2 O atoms) inhibitor
 
 [Term]
 id: CHEBI:65001
@@ -9832,6 +10426,7 @@ synonym: "Tweenase inhibitor" RELATED [ChEBI:]
 synonym: "Tweenase inhibitors" RELATED [ChEBI:]
 synonym: "Tweenesterase inhibitor" RELATED [ChEBI:]
 synonym: "Tweenesterase inhibitors" RELATED [ChEBI:]
+is_a: CHEBI:76773 ! EC 3.1.1.* (carboxylic ester hydrolase) inhibitor
 
 [Term]
 id: CHEBI:65212
@@ -9844,6 +10439,14 @@ is_a: CHEBI:63299 ! carbohydrate derivative
 relationship: has_functional_parent CHEBI:18154 ! polysaccharide
 
 [Term]
+id: CHEBI:65255
+name: food preservative
+namespace: chebi_ontology
+def: "Substances which are added to food in order to prevent decomposition caused by  microbial growth or by undesirable chemical changes." []
+synonym: "food preservatives" RELATED [ChEBI:]
+is_a: CHEBI:64047 ! food additive
+
+[Term]
 id: CHEBI:65256
 name: antimicrobial food preservative
 namespace: chebi_ontology
@@ -9851,6 +10454,8 @@ def: "A food preservative which prevents decomposition of food by preventing the
 synonym: "antimicrobial food preservatives" RELATED [ChEBI:]
 synonym: "antimicrobial preservative" RELATED [ChEBI:]
 synonym: "antimicrobial preservatives" RELATED [ChEBI:]
+is_a: CHEBI:33281 ! antimicrobial agent
+is_a: CHEBI:65255 ! food preservative
 
 [Term]
 id: CHEBI:66916
@@ -9908,6 +10513,7 @@ synonym: "L-ascorbic acid peroxidase inhibitors" RELATED [ChEBI:]
 synonym: "L-ascorbic acid-specific peroxidase inhibitor" RELATED [ChEBI:]
 synonym: "L-ascorbic acid-specific peroxidase inhibitors" RELATED [ChEBI:]
 xref: Wikipedia:L-ascorbate_peroxidase "Wikipedia"
+is_a: CHEBI:75381 ! EC 1.11.1.* (peroxidases) inhibitor
 
 [Term]
 id: CHEBI:73191
@@ -9919,6 +10525,25 @@ synonym: "ABA agonists" RELATED [ChEBI:]
 synonym: "ABA receptor agonist" RELATED [ChEBI:]
 synonym: "ABA receptor agonists" RELATED [ChEBI:]
 synonym: "abscisic acid receptor agonists" RELATED [ChEBI:]
+is_a: CHEBI:48705 ! agonist
+
+[Term]
+id: CHEBI:75381
+name: EC 1.11.1.* (peroxidases) inhibitor
+namespace: chebi_ontology
+def: "An EC 1.11.* (oxidoreductase acting on peroxide as donors) inhibitor that interferes with the action of any of the peroxidases (EC 1.11.1.*)." []
+synonym: "EC 1.11.1 inhibitor" RELATED [ChEBI:]
+synonym: "EC 1.11.1 inhibitors" RELATED [ChEBI:]
+synonym: "EC 1.11.1.* (peroxidase) inhibitor" RELATED [ChEBI:]
+synonym: "EC 1.11.1.* (peroxidase) inhibitors" RELATED [ChEBI:]
+synonym: "EC 1.11.1.* (peroxidases) inhibitors" RELATED [ChEBI:]
+synonym: "EC 1.11.1.* inhibitor" RELATED [ChEBI:]
+synonym: "EC 1.11.1.* inhibitors" RELATED [ChEBI:]
+synonym: "inhibitor of peroxidases" RELATED [ChEBI:]
+synonym: "inhibitors of peroxidases" RELATED [ChEBI:]
+synonym: "peroxidases inhibitors" RELATED [ChEBI:]
+xref: Wikipedia:Peroxidases "Wikipedia"
+is_a: CHEBI:76738 ! EC 1.11.* (oxidoreductase acting on peroxide as donors) inhibitor
 
 [Term]
 id: CHEBI:75763
@@ -10013,6 +10638,17 @@ namespace: chebi_ontology
 def: "A gas in an atmosphere that absorbs and emits radiation within the thermal infrared range, so contributing to the 'greenhouse effect'." []
 synonym: "greenhouse gases" RELATED [ChEBI:]
 xref: Wikipedia:Greenhouse_gas "Wikipedia"
+is_a: CHEBI:51086 ! chemical role
+
+[Term]
+id: CHEBI:76414
+name: propellant
+namespace: chebi_ontology
+def: "A compressed gas or liquid with a boiling point lower than room temperature which to used to propel and dispense liquids such as deodorants, insecticides, paints, etc. from aerosol cans." []
+synonym: "propellants" RELATED [ChEBI:]
+xref: CiteXplore:22519407 "PubMed citation"
+xref: CiteXplore:24001847 "PubMed citation"
+is_a: CHEBI:33232 ! application
 
 [Term]
 id: CHEBI:76507
@@ -10034,6 +10670,164 @@ is_a: CHEBI:2580 ! unsaturated fatty acid anion
 relationship: is_conjugate_base_of CHEBI:26208 ! polyunsaturated fatty acid
 
 [Term]
+id: CHEBI:76725
+name: EC 1.* (oxidoreductase) inhibitor
+namespace: chebi_ontology
+def: "An enzyme inhibitor which interferes with the action of an oxidoreductase (EC 1.*.*.*)." []
+synonym: "EC 1.* (oxidoreductase) inhibitors" RELATED [ChEBI:]
+synonym: "EC 1.* inhibitor" RELATED [ChEBI:]
+synonym: "EC 1.* inhibitors" RELATED [ChEBI:]
+synonym: "oxidoreductase (EC 1.*) inhibitor" RELATED [ChEBI:]
+synonym: "oxidoreductase (EC 1.*) inhibitors" RELATED [ChEBI:]
+synonym: "oxidoreductase inhibitor" RELATED [ChEBI:]
+synonym: "oxidoreductase inhibitors" RELATED [ChEBI:]
+xref: Wikipedia:Oxidoreductase "Wikipedia"
+is_a: CHEBI:23924 ! enzyme inhibitor
+
+[Term]
+id: CHEBI:76726
+name: EC 1.1.* (oxidoreductase acting on donor CH-OH group) inhibitor
+namespace: chebi_ontology
+def: "An oxidoreductase inhibitor which interferes with the action of an oxidoreductase acting on the CH-OH group of donors (EC 1.1.*.*)." []
+synonym: "EC 1.1.* (oxidoreductase acting on donor CH-OH group) inhibitors" RELATED [ChEBI:]
+synonym: "EC 1.1.* inhibitor" RELATED [ChEBI:]
+synonym: "EC 1.1.* inhibitors" RELATED [ChEBI:]
+synonym: "inhibitor of oxidoreductase acting on CH-OH group of donor" RELATED [ChEBI:]
+synonym: "inhibitor of oxidoreductase acting on CH-OH group of donors" RELATED [ChEBI:]
+synonym: "inhibitors of oxidoreductase acting on CH-OH group of donor" RELATED [ChEBI:]
+synonym: "inhibitors of oxidoreductase acting on CH-OH group of donors" RELATED [ChEBI:]
+synonym: "oxidoreductase acting on donor CH-OH group (EC 1.1.*) inhibitor" RELATED [ChEBI:]
+synonym: "oxidoreductase acting on donor CH-OH group (EC 1.1.*) inhibitors" RELATED [ChEBI:]
+synonym: "oxidoreductase acting on donor CH-OH group inhibitor" RELATED [ChEBI:]
+synonym: "oxidoreductase acting on donor CH-OH group inhibitors" RELATED [ChEBI:]
+is_a: CHEBI:76725 ! EC 1.* (oxidoreductase) inhibitor
+
+[Term]
+id: CHEBI:76738
+name: EC 1.11.* (oxidoreductase acting on peroxide as donors) inhibitor
+namespace: chebi_ontology
+def: "An oxidoreductase inhibitor which interferes with the action of an oxidoreductase acting on peroxide as donors (EC 1.11.*.*)." []
+synonym: "EC 1.11.* (oxidoreductase acting on peroxide as donors) inhibitors" RELATED [ChEBI:]
+synonym: "EC 1.11.* (oxidoreductases acting on peroxide as donors) inhibitor" RELATED [ChEBI:]
+synonym: "EC 1.11.* (oxidoreductases acting on peroxide as donors) inhibitors" RELATED [ChEBI:]
+synonym: "EC 1.11.* inhibitor" RELATED [ChEBI:]
+synonym: "EC 1.11.* inhibitors" RELATED [ChEBI:]
+synonym: "oxidoreductase acting on peroxide as donors (EC 1.11.*) inhibitor" RELATED [ChEBI:]
+synonym: "oxidoreductase acting on peroxide as donors (EC 1.11.*) inhibitors" RELATED [ChEBI:]
+synonym: "oxidoreductases acting on peroxide as donors (EC 1.11.*) inhibitor" RELATED [ChEBI:]
+synonym: "oxidoreductases acting on peroxide as donors (EC 1.11.*) inhibitors" RELATED [ChEBI:]
+is_a: CHEBI:76725 ! EC 1.* (oxidoreductase) inhibitor
+
+[Term]
+id: CHEBI:76740
+name: EC 1.13.* [oxidoreductase acting on single donors with incorporation of molecular oxygen (oxygenases)] inhibitor
+namespace: chebi_ontology
+def: "An oxidoreductase inhibitor which interferes with the action of an oxidoreductase acting on single donors with incorporation of molecular oxygen (oxygenases), EC 1.13.*.*." []
+synonym: "EC 1.13.* [oxidoreductase acting on single donors with incorporation of molecular oxygen (oxygenases)] inhibitors" RELATED [ChEBI:]
+synonym: "EC 1.13.* inhibitor" RELATED [ChEBI:]
+synonym: "EC 1.13.* inhibitors" RELATED [ChEBI:]
+synonym: "oxidoreductase acting on single donors with incorporation of molecular oxygen (oxygenases) (EC 1.13.*) inhibitor" RELATED [ChEBI:]
+synonym: "oxidoreductase acting on single donors with incorporation of molecular oxygen (oxygenases) (EC 1.13.*) inhibitors" RELATED [ChEBI:]
+synonym: "oxidoreductase acting on single donors with incorporation of molecular oxygen (oxygenases) inhibitor" RELATED [ChEBI:]
+synonym: "oxidoreductase acting on single donors with incorporation of molecular oxygen (oxygenases) inhibitors" RELATED [ChEBI:]
+is_a: CHEBI:76725 ! EC 1.* (oxidoreductase) inhibitor
+
+[Term]
+id: CHEBI:76759
+name: EC 3.* (hydrolase) inhibitor
+namespace: chebi_ontology
+def: "Any enzyme inhibitor that interferes with the action of a hydrolase (EC 3.*.*.*)." []
+synonym: "EC 3.* (hydrolase) inhibitors" RELATED [ChEBI:]
+synonym: "EC 3.* inhibitor" RELATED [ChEBI:]
+synonym: "EC 3.* inhibitors" RELATED [ChEBI:]
+synonym: "EC 3.*.*.* inhibitor" RELATED [ChEBI:]
+synonym: "EC 3.*.*.* inhibitors" RELATED [ChEBI:]
+synonym: "hydrolase (EC 3.*) inhibitor" RELATED [ChEBI:]
+synonym: "hydrolase (EC 3.*) inhibitors" RELATED [ChEBI:]
+synonym: "hydrolase inhibitor" RELATED [ChEBI:]
+synonym: "hydrolase inhibitors" RELATED [ChEBI:]
+xref: Wikipedia:Hydrolase "Wikipedia"
+is_a: CHEBI:23924 ! enzyme inhibitor
+
+[Term]
+id: CHEBI:76760
+name: EC 3.1.* (ester hydrolase) inhibitor
+namespace: chebi_ontology
+def: "A hydrolase inhibitor that interferes with the action of any ester hydrolase (EC 3.1.*.*)." []
+synonym: "EC 3.1.* (ester hydrolase) inhibitors" RELATED [ChEBI:]
+synonym: "EC 3.1.* inhibitor" RELATED [ChEBI:]
+synonym: "EC 3.1.* inhibitors" RELATED [ChEBI:]
+synonym: "ester hydrolase (EC 3.1.*) inhibitor" RELATED [ChEBI:]
+synonym: "ester hydrolase (EC 3.1.*) inhibitors" RELATED [ChEBI:]
+synonym: "ester hydrolase inhibitor" RELATED [ChEBI:]
+synonym: "ester hydrolase inhibitors" RELATED [ChEBI:]
+is_a: CHEBI:76759 ! EC 3.* (hydrolase) inhibitor
+
+[Term]
+id: CHEBI:76764
+name: EC 3.5.* (hydrolases acting on non-peptide C-N bonds) inhibitor
+namespace: chebi_ontology
+def: "Any hydrolase inhibitor that interferes with the action of a hydrolase acting on C-N bonds, other than peptide bonds (EC 3.5.*.*)." []
+synonym: "EC 3.5.* (hydrolase acting on non-peptide C-N bond) inhibitor" RELATED [ChEBI:]
+synonym: "EC 3.5.* (hydrolase acting on non-peptide C-N bond) inhibitors" RELATED [ChEBI:]
+synonym: "EC 3.5.* (hydrolases acting on C-N bonds, other than peptide bonds) inhibitor" RELATED [ChEBI:]
+synonym: "EC 3.5.* (hydrolases acting on C-N bonds, other than peptide bonds) inhibitors" RELATED [ChEBI:]
+synonym: "EC 3.5.* (hydrolases acting on non-peptide C-N bonds) inhibitors" RELATED [ChEBI:]
+synonym: "EC 3.5.* inhibitor" RELATED [ChEBI:]
+synonym: "EC 3.5.* inhibitors" RELATED [ChEBI:]
+is_a: CHEBI:76759 ! EC 3.* (hydrolase) inhibitor
+
+[Term]
+id: CHEBI:76773
+name: EC 3.1.1.* (carboxylic ester hydrolase) inhibitor
+namespace: chebi_ontology
+def: "An EC 3.1.* (ester hydrolase) inhibitor that interferes with the action of a carboxylic ester hydrolase (EC 3.1.1.*)." []
+synonym: "carboxylic ester hydrolase (EC 3.1.1.*) inhibitor" RELATED [ChEBI:]
+synonym: "carboxylic ester hydrolase (EC 3.1.1.*) inhibitors" RELATED [ChEBI:]
+synonym: "EC 3.1.1.* (carboxylic ester hydrolase) inhibitors" RELATED [ChEBI:]
+synonym: "EC 3.1.1.* inhibitor" RELATED [ChEBI:]
+synonym: "EC 3.1.1.* inhibitors" RELATED [ChEBI:]
+is_a: CHEBI:76760 ! EC 3.1.* (ester hydrolase) inhibitor
+
+[Term]
+id: CHEBI:76807
+name: EC 3.5.1.* (non-peptide linear amide C-N hydrolase) inhibitor
+namespace: chebi_ontology
+def: "An EC 3.5.* (hydrolases acting on non-peptide C-N bonds) inhibitor that interferes with the action of any non-peptide linear amide C-N hydrolase (EC 3.5.1.*)." []
+synonym: "EC 3.5.1.* (non-peptide linear amide C-N hydrolase) inhibitors" RELATED [ChEBI:]
+synonym: "EC 3.5.1.* inhibitor" RELATED [ChEBI:]
+synonym: "EC 3.5.1.* inhibitors" RELATED [ChEBI:]
+synonym: "non-peptide linear amide C-N hydrolase (EC 3.5.1.*) inhibitor" RELATED [ChEBI:]
+synonym: "non-peptide linear amide C-N hydrolase (EC 3.5.1.*) inhibitors" RELATED [ChEBI:]
+is_a: CHEBI:76764 ! EC 3.5.* (hydrolases acting on non-peptide C-N bonds) inhibitor
+
+[Term]
+id: CHEBI:76835
+name: EC 1.1.1.* (oxidoreductase acting on donor CH-OH group, NAD(+) or NADP(+) acceptor) inhibitor
+namespace: chebi_ontology
+def: "An EC 1.1.* (oxidoreductase acting on donor CH-OH group) inhibitor that uses NAD(+) or NADP(+) as acceptor (EC 1.1.1.*)." []
+synonym: "EC 1.1.1.* (oxidoreductase acting on donor CH-OH group, NAD(+) or NADP(+)acceptor) inhibitors" RELATED [ChEBI:]
+synonym: "EC 1.1.1.* inhibitor" RELATED [ChEBI:]
+synonym: "EC 1.1.1.* inhibitors" RELATED [ChEBI:]
+synonym: "oxidoreductase acting on donor CH-OH group, NAD(+) or NADP(+) acceptor (EC 1.1.1.*) inhibitor" RELATED [ChEBI:]
+synonym: "oxidoreductase acting on donor CH-OH group, NAD(+) or NADP(+) acceptor (EC 1.1.1.*) inhibitors" RELATED [ChEBI:]
+is_a: CHEBI:76726 ! EC 1.1.* (oxidoreductase acting on donor CH-OH group) inhibitor
+
+[Term]
+id: CHEBI:76837
+name: EC 1.13.11.* (oxidoreductase acting on single donors and incorporating 2 O atoms) inhibitor
+namespace: chebi_ontology
+def: "An EC 1.13.* [oxidoreductase acting on single donors with incorporation of molecular oxygen (oxygenases)] inhibitor that inhibits the action of any oxidoreductase incorporating 2 atoms of oxygen (EC 1.13.11.*)." []
+synonym: "EC 1.13.11.* (oxidoreductase acting on single donors and incorporating 2 atoms of oxygen) inhibitor" RELATED [ChEBI:]
+synonym: "EC 1.13.11.* (oxidoreductase acting on single donors and incorporating 2 atoms of oxygen) inhibitors" RELATED [ChEBI:]
+synonym: "EC 1.13.11.* (oxidoreductase acting on single donors and incorporating 2 O atoms) inhibitors" RELATED [ChEBI:]
+synonym: "EC 1.13.11.* inhibitor" RELATED [ChEBI:]
+synonym: "EC 1.13.11.* inhibitors" RELATED [ChEBI:]
+synonym: "oxidoreductase acting on single donors and incorporating 2 atoms of oxygen (EC 1.13.11.*) inhibitor" RELATED [ChEBI:]
+synonym: "oxidoreductase acting on single donors and incorporating 2 atoms of oxygen (EC 1.13.11.*) inhibitors" RELATED [ChEBI:]
+is_a: CHEBI:76740 ! EC 1.13.* [oxidoreductase acting on single donors with incorporation of molecular oxygen (oxygenases)] inhibitor
+
+[Term]
 id: CHEBI:76924
 name: plant metabolite
 namespace: chebi_ontology
@@ -10043,6 +10837,16 @@ def: "Any eukaryotic metabolite produced during a metabolic reaction in plants, 
 synonym: "plant metabolites" RELATED [ChEBI:]
 synonym: "plant secondary metabolites" RELATED [ChEBI:]
 is_a: CHEBI:75763 ! eukaryotic metabolite
+
+[Term]
+id: CHEBI:76932
+name: pathway inhibitor
+namespace: chebi_ontology
+def: "An enzyme inhibitor that interferes with one or more steps in a metabolic pathway." []
+synonym: "metabolic pathway inhibitor" RELATED [ChEBI:]
+synonym: "metabolic pathway inhibitors" RELATED [ChEBI:]
+synonym: "pathway inhibitors" RELATED [ChEBI:]
+is_a: CHEBI:23924 ! enzyme inhibitor
 
 [Term]
 id: CHEBI:76946
@@ -10115,6 +10919,7 @@ synonym: "prostaglandin-E2 9-reductase (EC 1.1.1.189) inhibitors" RELATED [ChEBI
 synonym: "reductase, 15-hydroxy-9-oxoprostaglandin inhibitor" RELATED [ChEBI:]
 synonym: "reductase, 15-hydroxy-9-oxoprostaglandin inhibitors" RELATED [ChEBI:]
 xref: Wikipedia:Prostaglandin-E2_9-reductase "Wikipedia"
+is_a: CHEBI:76835 ! EC 1.1.1.* (oxidoreductase acting on donor CH-OH group, NAD(+) or NADP(+) acceptor) inhibitor
 
 [Term]
 id: CHEBI:77450
@@ -10166,6 +10971,7 @@ synonym: "fatty acylamidase inhibitors" RELATED [ChEBI:]
 synonym: "N-acetylaminohydrolase inhibitor" RELATED [ChEBI:]
 synonym: "N-acetylaminohydrolase inhibitors" RELATED [ChEBI:]
 xref: Wikipedia:Amidase "Wikipedia"
+is_a: CHEBI:76807 ! EC 3.5.1.* (non-peptide linear amide C-N hydrolase) inhibitor
 
 [Term]
 id: CHEBI:77974
@@ -10174,6 +10980,7 @@ namespace: chebi_ontology
 def: "A food additive that is a (generally inert) gas which is used to envelop foodstuffs during packing and so protect them from unwanted chemical reactions such as food spoilage or oxidation during subsequent transport and storage. The term includes propellant gases, used to expel foods from a container." []
 synonym: "food packaging gases" RELATED [ChEBI:]
 xref: Wikipedia:Packaging_gas "Wikipedia"
+is_a: CHEBI:64047 ! food additive
 
 [Term]
 id: CHEBI:78017
@@ -10181,6 +10988,8 @@ name: food propellant
 namespace: chebi_ontology
 def: "A propellant that is used to expel foods from an aerosol container." []
 synonym: "food propellants" RELATED [ChEBI:]
+is_a: CHEBI:64047 ! food additive
+is_a: CHEBI:76414 ! propellant
 
 [Term]
 id: CHEBI:78049
@@ -10245,11 +11054,22 @@ synonym: "fatty acid 18:0" RELATED [UniProt:]
 is_a: CHEBI:58953 ! saturated fatty acid anion
 
 [Term]
+id: CHEBI:78295
+name: food component
+namespace: chebi_ontology
+def: "Any substance that is distributed in foodstuffs. It includes materials derived from plants or animals, such as vitamins or minerals, as well as environmental contaminants." []
+synonym: "dietary component" RELATED [ChEBI:]
+synonym: "dietary components" RELATED [ChEBI:]
+synonym: "food components" RELATED [ChEBI:]
+is_a: CHEBI:52211 ! physiological role
+
+[Term]
 id: CHEBI:78298
 name: environmental contaminant
 namespace: chebi_ontology
 def: "Any minor or unwanted substance introduced into the environment that can have undesired effects." []
 synonym: "environmental contaminants" RELATED [ChEBI:]
+is_a: CHEBI:51086 ! chemical role
 
 [Term]
 id: CHEBI:78433
@@ -10258,6 +11078,7 @@ namespace: chebi_ontology
 def: "A substance used in a thermodynamic heat pump cycle or refrigeration cycle that undergoes a phase change from a gas to a liquid and back. Refrigerants are used in air-conditioning systems and freezers or refrigerators and are assigned a \"R\" number (by ASHRAE - formerly the American Society of Heating, Refrigerating and Air Conditioning Engineers), which is determined systematically according to their molecular structure." []
 synonym: "refrigerants" RELATED [ChEBI:]
 xref: Wikipedia:Refrigerant "Wikipedia"
+is_a: CHEBI:33232 ! application
 
 [Term]
 id: CHEBI:78444
@@ -10313,6 +11134,7 @@ synonym: "triacetin esterase inhibitor" RELATED [ChEBI:]
 synonym: "triacetin esterase inhibitors" RELATED [ChEBI:]
 synonym: "vitamin A esterase inhibitor" RELATED [ChEBI:]
 synonym: "vitamin A esterase inhibitors" RELATED [ChEBI:]
+is_a: CHEBI:76773 ! EC 3.1.1.* (carboxylic ester hydrolase) inhibitor
 
 [Term]
 id: CHEBI:78608
@@ -10545,6 +11367,7 @@ synonym: "antifungal medications" RELATED [ChEBI:]
 synonym: "pharmaceutical fungicide" RELATED [ChEBI:]
 synonym: "pharmaceutical fungicides" RELATED [ChEBI:]
 xref: Wikipedia:Antifungal "Wikipedia"
+is_a: CHEBI:23888 ! drug
 is_a: CHEBI:35441 ! antiinfective agent
 is_a: CHEBI:35718 ! antifungal agent
 
@@ -10565,6 +11388,7 @@ name: drug allergen
 namespace: chebi_ontology
 def: "Any drug which causes the onset of an allergic reaction." []
 synonym: "allergenic drug" RELATED [ChEBI:]
+is_a: CHEBI:23888 ! drug
 is_a: CHEBI:50904 ! allergen
 
 [Term]
