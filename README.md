@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Planteome/planteome-amigo2.svg?branch=master)](https://travis-ci.org/Planteome/planteome-amigo2)
+[![Build Status](https://travis-ci.org/Planteome/planteome-core.svg?branch=master)](https://travis-ci.org/Planteome/planteome-core)
 
 This repository contains artefacts used across the whole Planteome project
 
