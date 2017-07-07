@@ -32,7 +32,7 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/co_331.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/co_336.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/co_341.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/co322.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/co_322.owl"/>
     </owl:Ontology>
 
 </rdf:RDF>
