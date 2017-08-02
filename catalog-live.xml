@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/planteome/planteome_noctua.owl" uri="/data/www/planteome_dev/noctua/ontologies/planteome_noctua.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/go.owl" uri="../go.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/po.owl" uri="https://raw.githubusercontent.com/Planteome/plant-ontology/master/po.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/to.owl" uri="https://raw.githubusercontent.com/Planteome/plant-trait-ontology/master/to.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/eo.owl" uri="https://raw.githubusercontent.com/Planteome/plant-environment-ontology/master/plant-environment-ontology.oba.owlo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_320.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-rice-traits/master/ibp-rice-trait-ontology_with-cropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_339.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-lentil-traits/master/lentil_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_321.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-wheat-traits/master/wheat-trait-ontology_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_334.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-cassava-traits/master/cassava-trait-ontology_with-cropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_336.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-soybean-traits/master/soybean-trait-ontology_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_341.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-pigeonpea-traits/master/pigeonpea-trait-ontology_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_322.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-maize-traits/master/maize-trait-ontology_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_331.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-sweetpotato-traits/master/sweetpotato-trait-ontology_withcropname.obo"/>
+</catalog>
