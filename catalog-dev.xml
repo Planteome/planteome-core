@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/planteome/planteome_noctua.owl" uri="/data/www/planteome_dev/noctua/ontologies/planteome_noctua.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/go.owl" uri="../go.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/go.owl" uri="/data/www/planteome_dev/amigo/ontology_files/go.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/po.owl" uri="https://raw.githubusercontent.com/Planteome/plant-ontology/master/plant-ontology.obo"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/to.owl" uri="https://raw.githubusercontent.com/Planteome/plant-trait-ontology/master/plant-trait-ontology.obo"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/eo.owl" uri="https://raw.githubusercontent.com/Planteome/plant-environment-ontology/master/plant-environment-ontology.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/peco.owl" uri="https://raw.githubusercontent.com/Planteome/plant-experimental-conditions-ontology/master/plant-environment-ontology.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ncbitaxon.owl" uri="https://raw.githubusercontent.com/Planteome/planteome-ncbi-taxonomy/master/ncbitaxon.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_320.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-rice-traits/master/ibp-rice-trait-ontology_with-cropname.obo"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_339.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-lentil-traits/master/lentil_withcropname.obo"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_321.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-wheat-traits/master/wheat-trait-ontology_withcropname.obo"/>

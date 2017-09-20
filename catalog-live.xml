@@ -4,7 +4,7 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/go.owl" uri="../go.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/po.owl" uri="https://raw.githubusercontent.com/Planteome/plant-ontology/master/po.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/to.owl" uri="https://raw.githubusercontent.com/Planteome/plant-trait-ontology/master/to.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/eo.owl" uri="https://raw.githubusercontent.com/Planteome/plant-environment-ontology/master/plant-environment-ontology.oba.owlo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/peco.owl" uri="https://raw.githubusercontent.com/Planteome/plant-experiemental-conditions-ontology/master/plant-environment-ontology.oba.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_320.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-rice-traits/master/ibp-rice-trait-ontology_with-cropname.obo"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_339.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-lentil-traits/master/lentil_withcropname.obo"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_321.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-wheat-traits/master/wheat-trait-ontology_withcropname.obo"/>
