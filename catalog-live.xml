@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/planteome/planteome_noctua.owl" uri="/data/www/planteome_dev/noctua/ontologies/planteome_noctua.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/go.owl" uri="../go.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/po.owl" uri="https://raw.githubusercontent.com/Planteome/plant-ontology/master/po.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/to.owl" uri="https://raw.githubusercontent.com/Planteome/plant-trait-ontology/master/to.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/peco.owl" uri="https://raw.githubusercontent.com/Planteome/plant-experiemental-conditions-ontology/master/peco.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/peco.owl" uri="https://raw.githubusercontent.com/Planteome/plant-experimental-conditions-ontology/master/src/ontology/peco.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/eco-base.owl" uri="https://raw.githubusercontent.com/evidenceontology/evidenceontology/master/eco-base.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ncbitaxon.owl" uri="https://raw.githubusercontent.com/Planteome/planteome-ncbi-taxonomy/master/ncbitaxon.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_320.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-rice-traits/master/ibp-rice-trait-ontology_with-cropname.obo"/>
@@ -17,4 +16,5 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_331.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-sweetpotato-traits/master/sweetpotato-trait-ontology_withcropname.obo"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_343.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-yam-traits/master/yam-trait-ontology_withcropname.obo"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_324.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-sorghum-traits/master/sorghum-with-crop-name.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_330.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-potato-traits/master/potato-trait-ontology_withcropname.obo"/>
 </catalog>
