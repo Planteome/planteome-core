@@ -3,18 +3,52 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/planteome/planteome_noctua.owl" uri="/data/www/planteome_dev/noctua/ontologies/planteome_noctua.owl"/>
 <!--    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/go.owl" uri="/data/www/planteome_dev/amigo/ontology_files/go.owl"/> -->
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/po.owl" uri="https://raw.githubusercontent.com/Planteome/plant-ontology/master/plant-ontology.obo"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/to.owl" uri="https://raw.githubusercontent.com/Planteome/plant-trait-ontology/master/plant-trait-ontology.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/to.owl" uri="https://raw.githubusercontent.com/Planteome/plant-trait-ontology/master/plant-trait-ontology.obo"/> 
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/peco.owl" uri="https://raw.githubusercontent.com/Planteome/plant-experimental-conditions-ontology/master/src/ontology/peco-edit.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/pso.owl" uri="https://raw.githubusercontent.com/Planteome/plant-stress-ontology/master/src/ontology/pso-edit.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/pdo.owl" uri="https://raw.githubusercontent.com/Planteome/plant-disease-ontology/master/plant-disease-ontology.obo"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/eco-base.owl" uri="https://raw.githubusercontent.com/evidenceontology/evidenceontology/master/eco-base.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ncbitaxon.owl" uri="https://raw.githubusercontent.com/Planteome/planteome-ncbi-taxonomy/master/ncbitaxon.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_320.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-rice-traits/master/ibp-rice-trait-ontology_with-cropname.obo"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_339.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-lentil-traits/master/lentil_withcropname.obo"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_321.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-wheat-traits/master/wheat-trait-ontology_withcropname.obo"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_334.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-cassava-traits/master/cassava-trait-ontology_with-cropname.obo"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_336.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-soybean-traits/master/soybean-trait-ontology_withcropname.obo"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_341.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-pigeonpea-traits/master/pigeonpea-trait-ontology_withcropname.obo"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_322.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-maize-traits/master/maize-trait-ontology_withcropname.obo"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_331.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-sweetpotato-traits/master/sweetpotato-trait-ontology_withcropname.obo"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_343.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-yam-traits/master/yam-trait-ontology_withcropname.obo"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_324.owl" uri="https://raw.githubusercontent.com/Planteome/ibp-sorghum-traits/master/sorghum-with-crop-name.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_336.owl" uri="https://raw.githubusercontent.com/Planteome/trait-mappings/master/soybean-trait-ontology_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_341.owl" uri="https://raw.githubusercontent.com/Planteome/trait-mappings/master/pigeonpea-trait-ontology_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_322.owl" uri="https://raw.githubusercontent.com/Planteome/trait-mappings/master/maize-trait-ontology_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_331.owl" uri="https://raw.githubusercontent.com/Planteome/trait-mappings/master/sweetpotato-trait-ontology_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_320.owl" uri="https://raw.githubusercontent.com/Planteome/trait-mappings/master/rice-trait-ontology_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_343.owl" uri="https://raw.githubusercontent.com/Planteome/trait-mappings/master/yam-trait-ontology_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_339.owl" uri="https://raw.githubusercontent.com/Planteome/trait-mappings/master/lentil-trait-ontology_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_321.owl" uri="https://raw.githubusercontent.com/Planteome/trait-mappings/master/wheat-trait-ontology_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_334.owl" uri="https://raw.githubusercontent.com/Planteome/trait-mappings/master/cassava-trait-ontology_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_330.owl" uri="https://raw.githubusercontent.com/Planteome/trait-mappings/master/potato-trait-ontology_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_324.owl" uri="https://raw.githubusercontent.com/Planteome/trait-mappings/master/sorghum-trait-ontology_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_350.owl" uri="https://raw.githubusercontent.com/Planteome/trait-mappings/master/oat-trait-ontology_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_325.owl" uri="https://raw.githubusercontent.com/Planteome/trait-mappings/master/banana-trait-ontology_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_335.owl" uri="https://raw.githubusercontent.com/Planteome/trait-mappings/master/commonbean-trait-ontology_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_340.owl" uri="https://raw.githubusercontent.com/Planteome/trait-mappings/master/cowpea-trait-ontology_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_323.owl" uri="https://raw.githubusercontent.com/Planteome/trait-mappings/master/barley-trait-ontology_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_338.owl" uri="https://raw.githubusercontent.com/Planteome/trait-mappings/master/chickpea-trait-ontology_withcropname.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/co_337.owl" uri="https://raw.githubusercontent.com/Planteome/trait-mappings/master/groundnut-trait-ontology_withcropname.obo"/>
+<!--    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/pso.owl" uri="/data/www/planteome_dev/amigo/ontology_files/pso-edit.owl"/>
+        -->
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/to/imports/ro_import.owl" uri="https://raw.githubusercontent.com/oborel/obo-relations/master/ro.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/pso/upper_level.owl" uri="https://raw.githubusercontent.com/Planteome/plant-stress-ontology/master/src/ontology/patterns/ontology_files/upper_level.owl"/>
+
+<!-- Add PSO specific purl imports -->
+
+  <uri id="User Entered Import Resulution" name="http://purl.obolibrary.org/obo/pso/imports/chebi_import.owl" uri="https://raw.githubusercontent.com/Planteome/plant-stress-ontology/master/src/ontology/imports/chebi_import.owl"/>
+  <uri id="User Entered Import Resulution" name="http://purl.obolibrary.org/obo/pso/imports/chebi_import.obo" uri="https://raw.githubusercontent.com/Planteome/plant-stress-ontology/master/src/ontology/imports/chebi_import.obo"/>
+  
+  <uri id="User Entered Import Resulution" name="http://purl.obolibrary.org/obo/pso/imports/ncbitaxon_import.owl" uri="https://raw.githubusercontent.com/Planteome/plant-stress-ontology/master/src/ontology/imports/ncbitaxon_import.owl"/>
+  <uri id="User Entered Import Resulution" name="http://purl.obolibrary.org/obo/pso/imports/ncbitaxon_import.obo" uri="https://raw.githubusercontent.com/Planteome/plant-stress-ontology/master/src/ontology/imports/ncbitaxon_import.obo"/>
+  
+  <uri id="User Entered Import Resulution" name="http://purl.obolibrary.org/obo/pso/imports/peco_import.owl" uri="https://raw.githubusercontent.com/Planteome/plant-stress-ontology/master/src/ontology/imports/peco_import.owl"/>
+  <uri id="User Entered Import Resulution" name="http://purl.obolibrary.org/obo/pso/imports/peco_import.obo" uri="https://raw.githubusercontent.com/Planteome/plant-stress-ontology/master/src/ontology/imports/peco_import.obo"/>
+  
+  <uri id="User Entered Import Resulution" name="http://purl.obolibrary.org/obo/pso/imports/po_import.owl" uri="https://raw.githubusercontent.com/Planteome/plant-stress-ontology/master/src/ontology/imports/po_import.owl"/>
+  <uri id="User Entered Import Resulution" name="http://purl.obolibrary.org/obo/pso/imports/po_import.obo" uri="https://raw.githubusercontent.com/Planteome/plant-stress-ontology/master/src/ontology/imports/po_import.obo"/>
+  
+  <uri id="User Entered Import Resulution" name="http://purl.obolibrary.org/obo/pso/imports/ro_import.owl" uri="https://raw.githubusercontent.com/Planteome/plant-stress-ontology/master/src/ontology/imports/ro_import.owl"/>
+  <uri id="User Entered Import Resulution" name="http://purl.obolibrary.org/obo/pso/imports/ro_import.obo" uri="https://raw.githubusercontent.com/Planteome/plant-stress-ontology/master/src/ontology/imports/ro_import.obo"/>
+
+  <uri id="User Entered Import Resulution" name="http://purl.obolibrary.org/obo/pso/patterns/definitions.owl" uri="https://raw.githubusercontent.com/Planteome/plant-stress-ontology/master/src/ontology/../patterns/definitions.owl"/>
+
 </catalog>
